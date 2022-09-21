@@ -1,3 +1,64 @@
+let firstName = 'Paolo';
+let lastName = 'Debuque';
+let fullName = `${firstName} ${lastName}`;
+
+console.log(fullName);
+
+let luckyNumber = 23;
+console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!`);
+
+let adventurous=false;
+let food='fried chicken';
+let pets = 1;
+let friendsPets = 4;
+pets +=2;
+const allowedPets = 5;
+
+if (adventurous) {
+    console.log('Adventures are great!');
+} else {
+    console.log('How about we stay home?');
+};
+
+if (luckyNumber === 2 && adventurous) {
+    console.log('Roll the dice!');
+}
+
+if (pets < allowedPets) {
+    console.log('I can have more pets!')
+} else if (pets === allowedPets) {
+    console.log('I have enough pets')
+} else {
+    console.log('Oh no, I have too many pets!')
+}
+
+// let mostPets=0;
+
+// if (pets<=friendsPets) {
+//     mostPets=friendsPets;
+// } else {
+//     mostPets=pets;
+// // }
+
+// console.log(mostPets);
+
+switch (luckyNumber) {
+    case 1:
+        console.log("First is the worst");
+        break;
+    case 2:
+        console.log("Second is the best");
+        break;
+    case 3:
+        console.log("Third is the one with the polka dot dress");
+        break;
+    default:
+        console.log("Luck is what happens when preparation meets opportunity");
+}
+
+const mostPets = pets>=friendsPets ? pets : friendsPets;
+console.log(mostPets);
+
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 
